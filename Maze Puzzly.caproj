@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Maze Puzzly</name>
+    <description></description>
+    <version>1</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>3n6sfrqs7xohz</unique-id>
+    <saved-with-version>25900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML 5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview mode">HTTP</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Text" sid="3264271563480944">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Touch" sid="999278418360429">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Audio" sid="276590202734838">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Border" sid="273383527751154">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170569802452118" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ball" sid="764564479988341">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717479057346474" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804">
+                        <collision-poly>
+                            <point x="0.055" y="0.117647" />
+                            <point x="0.894997" y="0.107843" />
+                            <point x="0.874998" y="0.931368" />
+                            <point x="0.0650006" y="0.941175" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="296473068779205">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Keyboard" sid="921187241719836">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="kbhelp" sid="600752049635272">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830246652960728" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501887" original-source="C:\Users\Jaswir Raghoe\Documents\GameMakerStudio2\FreeNerding\sprites\keyboard_help\5dc6b363-f068-4259-b424-57000f4a436f.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>1.xml</layout>
+        <layout>2.xml</layout>
+        <layout>3.xml</layout>
+        <layout>4.xml</layout>
+        <layout>5.xml</layout>
+        <layout>win.xml</layout>
+        <layout>unused.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="6">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="5">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="10" />
+    </global-instances>
+    <sounds-folder>
+        <file name="bomb.m4a" />
+        <file name="hmexplode.ogg" />
+        <file name="win.m4a" />
+        <file name="win.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
