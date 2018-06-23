@@ -83,9 +83,46 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="trail" sid="972515206623828">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="leftstart" sid="570353457083831" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106438535669887" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52">
+                        <collision-poly>
+                            <point x="0.055" y="0.117647" />
+                            <point x="0.894997" y="0.107843" />
+                            <point x="0.874998" y="0.931368" />
+                            <point x="0.0650006" y="0.941175" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deathtrail" sid="803570184160632">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="leftstart" sid="917577705447972" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950906646750150" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52">
+                        <collision-poly>
+                            <point x="0.055" y="0.117647" />
+                            <point x="0.894997" y="0.107843" />
+                            <point x="0.874998" y="0.931368" />
+                            <point x="0.0650006" y="0.941175" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
+        <layout>scaling.xml</layout>
         <layout>1.xml</layout>
         <layout>2.xml</layout>
         <layout>3.xml</layout>
@@ -96,6 +133,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>scaling.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="6">

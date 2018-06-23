@@ -17,7 +17,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="6">5</layout>
         <layout order="7">win</layout>
         <layout order="8">unused</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout order="10">scaling</layout>
+        <event-sheet order="1">Event sheet 1</event-sheet>
+        <event-sheet active="1" order="9">scaling</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -37,5 +39,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Border/" />
         <folder expanded="1" path="animation-folder/Ball/" />
         <folder expanded="1" path="animation-folder/kbhelp/" />
+        <folder expanded="1" path="animation-folder/trail/" />
+        <folder expanded="1" path="animation-folder/deathtrail/" />
     </folders-expanded>
 </c2uistate>
