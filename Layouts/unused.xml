@@ -2,7 +2,7 @@
 <c2layout>
     <name>unused</name>
     <sid>535170956750210</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Snake Sheet</event-sheet>
     <size>
         <width>1280</width>
         <height>1024</height>
@@ -37,7 +37,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <leftstart>0</leftstart>
+                        <active>false</active>
+                        <direction>0</direction>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -45,11 +46,11 @@
                         <x>-88</x>
                         <y>168</y>
                         <z>0</z>
-                        <width>25</width>
-                        <height>25</height>
+                        <width>15</width>
+                        <height>15</height>
                         <depth>0</depth>
-                        <hotspotX>0.519999981</hotspotX>
-                        <hotspotY>0.519999981</hotspotY>
+                        <hotspotX>0.600000024</hotspotX>
+                        <hotspotY>0.600000024</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -110,6 +111,28 @@
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Dot" uid="39">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-112</x>
+                        <y>398</y>
+                        <z>0</z>
+                        <width>10</width>
+                        <height>10</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

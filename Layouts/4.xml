@@ -2,7 +2,7 @@
 <c2layout>
     <name>4</name>
     <sid>465322404249243</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Snake Sheet</event-sheet>
     <size>
         <width>1280</width>
         <height>1024</height>
@@ -95,24 +95,27 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Ball" uid="38">
+                <instance type="Head" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <alive>true</alive>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>59</x>
                         <y>75</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>51</height>
+                        <width>15</width>
+                        <height>15</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.509803951</hotspotY>
+                        <hotspotX>0.600000024</hotspotX>
+                        <hotspotY>0.600000024</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>

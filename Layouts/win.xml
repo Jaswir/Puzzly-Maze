@@ -2,7 +2,7 @@
 <c2layout>
     <name>win</name>
     <sid>254149525850070</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Snake Sheet</event-sheet>
     <size>
         <width>1280</width>
         <height>1024</height>

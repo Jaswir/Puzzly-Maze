@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Snake Sheet</name>
+    <events>
+        <variable constant="0" name="yOffset" sid="985530665037537" static="0" type="number">0</variable>
+        <variable constant="0" name="xOffset" sid="486953013146847" static="0" type="number">0</variable>
+        <event-block sid="581647267371334">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="609811341713735" type="System" />
+            </conditions>
+            <actions>
+                <action id="-47" name="Set pixel rounding" sid="975807180211085" type="System">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="380831318128765" type="System">
+                    <param id="0" name="Variable">yOffset</param>
+                    <param id="1" name="Value">Head.Width</param>
+                </action>
+                <action id="2" name="Stop" sid="359696304407296" type="Head" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="201993778324061">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="988360798027268" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="394039058557309" type="System">
+                    <param id="0" name="Variable">xOffset</param>
+                    <param id="1" name="Value">-Head.Width</param>
+                </action>
+                <action id="-9" name="Set value" sid="670015610868309" type="System">
+                    <param id="0" name="Variable">yOffset</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="219601945409405">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="708550729842752" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="926114285302355" type="System">
+                    <param id="0" name="Variable">xOffset</param>
+                    <param id="1" name="Value">Head.Width</param>
+                </action>
+                <action id="-9" name="Set value" sid="860615729035331" type="System">
+                    <param id="0" name="Variable">yOffset</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="723017365043156">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="574192266912171" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="313251551454920" type="System">
+                    <param id="0" name="Variable">xOffset</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="870356159857778" type="System">
+                    <param id="0" name="Variable">yOffset</param>
+                    <param id="1" name="Value">Head.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="513777103520367">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="939975303921998" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="785480098564102" type="System">
+                    <param id="0" name="Variable">xOffset</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="928579423692008" type="System">
+                    <param id="0" name="Variable">yOffset</param>
+                    <param id="1" name="Value">-Head.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="205394445559946">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="444549142495979" type="System">
+                    <param id="0" name="Interval (seconds)">0.09</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="736700580347457" type="Head">
+                    <param id="0" name="Instance variable">alive</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="329864696795269" type="System">
+                    <param id="0" name="Object to create">trail</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">head.X</param>
+                    <param id="3" name="Y">head.Y</param>
+                </action>
+                <action id="-1" name="Set X" sid="373347610051787" type="Head">
+                    <param id="0" name="X">Head.X + xOffset</param>
+                </action>
+                <action id="-2" name="Set Y" sid="973230518190691" type="Head">
+                    <param id="0" name="Y">Head.Y + yOffset</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="884203775372241">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="293730729715062" type="Head">
+                    <param id="0" name="Object">trail</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="492703367378507" type="Text">
+                    <param id="0" name="Text">&quot;Ate self&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="991349383784371" type="Head">
+                    <param id="0" name="Instance variable">alive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="846167781506855" type="Audio">
+                    <param id="0" name="Audio file">death</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="943186481772375" type="Head">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

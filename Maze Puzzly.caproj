@@ -53,18 +53,15 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Ball" sid="764564479988341">
+        <object-type name="Head" sid="764564479988341">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="alive" sid="835507085966203" type="boolean" />
+            </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717479057346474" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804">
-                        <collision-poly>
-                            <point x="0.055" y="0.117647" />
-                            <point x="0.894997" y="0.107843" />
-                            <point x="0.874998" y="0.931368" />
-                            <point x="0.0650006" y="0.941175" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717479057346474" speed="5">
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.6" />
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.6" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -86,29 +83,27 @@
         <object-type name="trail" sid="972515206623828">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="leftstart" sid="570353457083831" type="number" />
+                <instance-variable name="active" sid="383043413965263" type="boolean" />
+                <instance-variable name="direction" sid="660281422952025" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106438535669887" speed="5">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.52">
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.6">
                         <collision-poly>
-                            <point x="0.055" y="0.117647" />
-                            <point x="0.894997" y="0.107843" />
-                            <point x="0.874998" y="0.931368" />
-                            <point x="0.0650006" y="0.941175" />
+                            <point x="0.1" y="0.15" />
+                            <point x="0.88" y="0.14" />
+                            <point x="0.87" y="0.86" />
+                            <point x="0.1" y="0.88" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="deathtrail" sid="803570184160632">
+        <object-type name="Dot" sid="128906386617911">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="leftstart" sid="917577705447972" type="number" />
-            </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950906646750150" speed="5">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.52">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="291669970151275" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.055" y="0.117647" />
                             <point x="0.894997" y="0.107843" />
@@ -122,7 +117,7 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>scaling.xml</layout>
+        <layout>testinggarden.xml</layout>
         <layout>1.xml</layout>
         <layout>2.xml</layout>
         <layout>3.xml</layout>
@@ -132,8 +127,7 @@
         <layout>unused.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>scaling.xml</event-sheet>
+        <event-sheet>Snake Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="6">
@@ -158,10 +152,10 @@
         <global-instance type="Keyboard" uid="10" />
     </global-instances>
     <sounds-folder>
-        <file name="bomb.m4a" />
-        <file name="hmexplode.ogg" />
         <file name="win.m4a" />
         <file name="win.ogg" />
+        <file name="death.m4a" />
+        <file name="death.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
