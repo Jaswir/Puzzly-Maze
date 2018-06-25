@@ -10,83 +10,112 @@
                 <condition id="-2" name="On start of layout" sid="609811341713735" type="System" />
             </conditions>
             <actions>
-                <action id="-47" name="Set pixel rounding" sid="975807180211085" type="System">
-                    <param id="0" name="Mode">1</param>
-                </action>
                 <action id="-9" name="Set value" sid="380831318128765" type="System">
                     <param id="0" name="Variable">yOffset</param>
                     <param id="1" name="Value">Head.Width</param>
                 </action>
                 <action id="2" name="Stop" sid="359696304407296" type="Head" />
+                <action id="0" name="Set text" sid="342345972536936" type="Text">
+                    <param id="0" name="Text">LayoutName &amp; &quot;/5&quot;</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="274771435065868">
+                    <conditions>
+                        <condition id="-31" name="Object UID exists" sid="156217741762635" type="System">
+                            <param id="0" name="UID">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="298946329693937" type="System">
+                            <param id="0" name="Variable">yOffset</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="235741897331980" type="System">
+                            <param id="0" name="Variable">xOffset</param>
+                            <param id="1" name="Value">Head.Width</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-block any="1" sid="201993778324061">
+        <event-block sid="432641468446991">
             <conditions>
-                <condition id="0" name="On key pressed" sid="988360798027268" type="Keyboard">
-                    <param id="0" name="Key">37</param>
+                <condition id="-8" name="Is boolean instance variable set" sid="938441957052908" type="Head">
+                    <param id="0" name="Instance variable">alive</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="394039058557309" type="System">
-                    <param id="0" name="Variable">xOffset</param>
-                    <param id="1" name="Value">-Head.Width</param>
-                </action>
-                <action id="-9" name="Set value" sid="670015610868309" type="System">
-                    <param id="0" name="Variable">yOffset</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="219601945409405">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="708550729842752" type="Keyboard">
-                    <param id="0" name="Key">39</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="926114285302355" type="System">
-                    <param id="0" name="Variable">xOffset</param>
-                    <param id="1" name="Value">Head.Width</param>
-                </action>
-                <action id="-9" name="Set value" sid="860615729035331" type="System">
-                    <param id="0" name="Variable">yOffset</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="723017365043156">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="574192266912171" type="Keyboard">
-                    <param id="0" name="Key">40</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="313251551454920" type="System">
-                    <param id="0" name="Variable">xOffset</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="870356159857778" type="System">
-                    <param id="0" name="Variable">yOffset</param>
-                    <param id="1" name="Value">Head.Width</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="513777103520367">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="939975303921998" type="Keyboard">
-                    <param id="0" name="Key">38</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="785480098564102" type="System">
-                    <param id="0" name="Variable">xOffset</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="928579423692008" type="System">
-                    <param id="0" name="Variable">yOffset</param>
-                    <param id="1" name="Value">-Head.Width</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="201993778324061">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="988360798027268" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="394039058557309" type="System">
+                            <param id="0" name="Variable">xOffset</param>
+                            <param id="1" name="Value">-Head.Width</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="670015610868309" type="System">
+                            <param id="0" name="Variable">yOffset</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="219601945409405">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="708550729842752" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="926114285302355" type="System">
+                            <param id="0" name="Variable">xOffset</param>
+                            <param id="1" name="Value">Head.Width</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="860615729035331" type="System">
+                            <param id="0" name="Variable">yOffset</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="723017365043156">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="574192266912171" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="313251551454920" type="System">
+                            <param id="0" name="Variable">xOffset</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="870356159857778" type="System">
+                            <param id="0" name="Variable">yOffset</param>
+                            <param id="1" name="Value">Head.Width</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="513777103520367">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="939975303921998" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="785480098564102" type="System">
+                            <param id="0" name="Variable">xOffset</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="928579423692008" type="System">
+                            <param id="0" name="Variable">yOffset</param>
+                            <param id="1" name="Value">-Head.Width</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="205394445559946">
             <conditions>
@@ -100,7 +129,7 @@
             <actions>
                 <action id="-3" name="Create object" sid="329864696795269" type="System">
                     <param id="0" name="Object to create">trail</param>
-                    <param id="1" name="Layer">0</param>
+                    <param id="1" name="Layer">&quot;trail&quot;</param>
                     <param id="2" name="X">head.X</param>
                     <param id="3" name="Y">head.Y</param>
                 </action>
@@ -112,16 +141,17 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="884203775372241">
+        <comment>Collision</comment>
+        <event-block any="1" sid="184578443386929">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="293730729715062" type="Head">
+                <condition id="0" name="On collision with another object" sid="532127898612115" type="Head">
                     <param id="0" name="Object">trail</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="721252201794593" type="Head">
+                    <param id="0" name="Object">Border</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="492703367378507" type="Text">
-                    <param id="0" name="Text">&quot;Ate self&quot;</param>
-                </action>
                 <action id="-13" name="Set boolean" sid="991349383784371" type="Head">
                     <param id="0" name="Instance variable">alive</param>
                     <param id="1" name="Value">0</param>
@@ -134,6 +164,45 @@
                 </action>
                 <action id="5" name="Set frame" sid="943186481772375" type="Head">
                     <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Restart</comment>
+        <event-block any="1" sid="332624082284336">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="463911250375835" type="Head">
+                    <param id="0" name="Instance variable">alive</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="293740801846789">
+                    <conditions>
+                        <condition id="1" name="On any key pressed" sid="931881900928279" type="Keyboard" />
+                        <condition id="2" name="Is in touch" sid="536581893587308" type="Touch" />
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="416088804544833" type="System" />
+                        <action id="-26" name="Restart layout" sid="660025221491962" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Levelup</comment>
+        <event-block sid="668011502064343">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="168620962432311" type="Head" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="870025086117705" type="System" />
+                <action id="0" name="Play" sid="237950313426851" type="Audio">
+                    <param id="0" name="Audio file">win</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-43" name="Go to next/previous layout" sid="718392433265258" type="System">
+                    <param id="0" name="Which">0</param>
                 </action>
             </actions>
         </event-block>

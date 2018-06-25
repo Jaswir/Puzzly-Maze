@@ -117,7 +117,6 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>testinggarden.xml</layout>
         <layout>1.xml</layout>
         <layout>2.xml</layout>
         <layout>3.xml</layout>
