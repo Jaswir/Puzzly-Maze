@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text" uid="67">
+                <instance type="level_progress" uid="67">
                     <properties>
                         <text>You win!</text>
                         <initial-visibility>Visible</initial-visibility>

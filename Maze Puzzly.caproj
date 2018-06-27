@@ -36,7 +36,7 @@
         <prop name="Preview mode">HTTP</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Text" sid="3264271563480944">
+        <object-type name="level_progress" sid="3264271563480944">
             <plugin id="Text" />
         </object-type>
         <object-type name="Touch" sid="999278418360429">
@@ -114,6 +114,44 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="blue_arrow" sid="664781917579958">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="974828292161091" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="red_arrow" sid="501176440838058">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117477373947150" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="exit" sid="317701695036302">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="371324385189920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameover" sid="706784782954007">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="overlay" sid="698452445740915">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518199274894437" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="continue" sid="637157580544138">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -126,7 +164,7 @@
         <layout>unused.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Snake Sheet.xml</event-sheet>
+        <event-sheet>SnakeMaze.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="6">

@@ -11,13 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">1</layout>
-        <layout order="3">2</layout>
-        <layout order="4">unused</layout>
-        <layout order="5">3</layout>
-        <layout order="6">4</layout>
-        <layout order="7">5</layout>
-        <layout order="8">win</layout>
-        <event-sheet active="1" order="2">Snake Sheet</event-sheet>
+        <layout order="2">2</layout>
+        <layout order="3">unused</layout>
+        <layout order="4">3</layout>
+        <layout order="5">4</layout>
+        <layout order="6">5</layout>
+        <layout order="7">win</layout>
+        <event-sheet active="1" order="8">SnakeMaze</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -39,5 +39,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/kbhelp/" />
         <folder expanded="1" path="animation-folder/trail/" />
         <folder expanded="1" path="animation-folder/Dot/" />
+        <folder expanded="1" path="animation-folder/blue_arrow/" />
+        <folder expanded="1" path="animation-folder/red_arrow/" />
+        <folder expanded="1" path="animation-folder/exit/" />
+        <folder expanded="1" path="animation-folder/overlay/" />
     </folders-expanded>
 </c2uistate>
